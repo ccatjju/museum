@@ -1,0 +1,71 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  position: relative;
+}
+
+.basic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box1 {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  height: 100vh;
+  margin: 0;
+}
+
+.box2 video {
+  height: 100vh;
+  margin: 0;
+  object-fit: cover;
+}
+
+.point {
+  background-color: rgb(207, 207, 207);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* align-items: center; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: basicGrow 1.5s ease-in-out infinite;
+}
+
+.main video {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes basicGrow {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
