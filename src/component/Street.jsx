@@ -388,7 +388,7 @@ export default function Street() {
   ).length;
 
   return (
-    <div className="absolute inset-0 w-[100svw] h-[100svh] bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 overflow-hidden">
+    <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 overflow-hidden">
       <div>
         {/* <div className="z-10">
           <h1>이야아아</h1>
@@ -400,8 +400,8 @@ export default function Street() {
             loop
             muted
             playsInline
-            className="inset-0 w-full h-full object-cover block max-w-none z-0"
-          />
+            className="fixed inset-0 w-full h-full object-cover"
+          ></video>
         </div>
       </div>
 
